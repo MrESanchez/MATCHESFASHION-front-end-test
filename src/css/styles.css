@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Lato', Helvetica, sans-serif;
+	min-height: 100vh;
+	color: black;
+}
+
+h2{
+	text-align: left;
+	margin-left: 20px;
+	font-size: 30px;
+	color: black;
+}
+
+.products{
+	display: grid;
+	grid-gap: 16px;
+	padding: 16px;
+}
+	
+	
+	@media (min-width: 768px) {
+	.products {
+		grid-gap: 16px;
+		padding: 16px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+  }
+  
+  @media (min-width: 960px) {
+	.products {
+		grid-gap: 16px;
+		padding: 16px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+  }
+  
+  @media (min-width: 1200px) {
+	.products {
+		grid-gap: 16px;
+		padding: 16px;
+		grid-template-columns: repeat(4, 1fr);
+	}
+  }
+	
+
+
+
+.product img{
+	width: 100%;
+	display: block;
+}
+
+.product .designer{
+	text-align: center;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.product .name{
+	text-align: center;
+	padding: 0 20px 0 20px;	
+	font-size: 0.8rem;
+	line-height: 22px;
+}
+
+.product .price{
+	text-align: center;
+	font-size: 0.8rem;
+	font-family: 'Lato', Helvetica, sans-serif;
+}
+.btn {
+    padding: .7rem 2rem;
+    background: royalblue;
+    border: none;
+    color: #FFF;
+    margin: 20px auto;
+    display: block;
+    font-size: 1.3rem;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
